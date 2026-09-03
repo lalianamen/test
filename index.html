@@ -3,322 +3,63 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AutoLux — Auto Broker &amp; Leasing | Los Angeles &amp; Sacramento</title>
-  <meta name="description" content="AutoLux is a premier auto broker serving Los Angeles and Sacramento. We negotiate new &amp; used car purchases, leases, and financing — saving you time, money, and stress.">
+  <title>AutoLux — Get Approved</title>
+  <meta name="description" content="Apply for auto financing with AutoLux. Secure online application — checking your rate won't affect your credit score.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background:
+        radial-gradient(900px 500px at 80% -10%, rgba(212, 165, 72, 0.18), transparent 60%),
+        linear-gradient(160deg, #0b1220 0%, #101a2e 55%, #16233d 100%);
+      color: #c3ccdf;
+      text-align: center;
+      padding: 24px;
+    }
+    .box { max-width: 560px; }
+    .logo {
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: 2.6rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin: 0 0 10px;
+    }
+    .logo span { color: #d4a548; }
+    p { margin: 0 0 32px; font-size: 1.08rem; line-height: 1.6; }
+    .btn {
+      display: inline-block;
+      padding: 18px 44px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, #d4a548, #c08f2f);
+      color: #0b1220;
+      font-size: 1.15rem;
+      font-weight: 700;
+      text-decoration: none;
+      box-shadow: 0 10px 26px rgba(212, 165, 72, 0.4);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+    .btn:hover { transform: translateY(-2px); box-shadow: 0 14px 32px rgba(212, 165, 72, 0.5); }
+    .note { margin-top: 18px; font-size: 0.85rem; color: #8f9ab4; }
+  </style>
 </head>
 <body>
-
-  <div class="topbar">
-    <div class="container">
-      <div class="topbar__phones">
-        <a href="tel:+18187621100">Los Angeles: 818.762.1100</a>
-        <a href="tel:+12799000101">Sacramento: 279.900.0101</a>
-      </div>
-      <span>Mon–Fri 11AM–7PM &middot; Sat 11AM–5PM &middot; Sun Closed</span>
-    </div>
+  <div class="box">
+    <h1 class="logo">Auto<span>Lux</span></h1>
+    <p>Get approved for your next car in minutes.</p>
+    <a class="btn"
+       href="https://apply.autopay.com/unified?partnerUniqueId=&amp;ap%5Ba%5D%5BpartnerRecordUniqueIdentifier%5D=&amp;leadChannel=AUTOPAY_AUTO_LUX_FAST_TRACK_API"
+       target="_blank" rel="noopener">
+      Get Approved
+    </a>
+    <p class="note">Secure application &middot; Soft credit pull — checking your rate won't affect your credit score</p>
   </div>
-
-  <header class="site-header">
-    <div class="container">
-      <a class="logo" href="index.html">Auto<span>Lux</span></a>
-      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-      <nav class="nav" aria-label="Main navigation">
-        <a href="index.html">Home</a>
-        <a href="lease-specials.html">Lease Specials</a>
-        <a href="commercial.html">Commercial</a>
-        <a href="about.html">About Us</a>
-        <a href="contact.html">Contact</a>
-        <a class="btn btn--gold" href="credit-application.html">Get Approved</a>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-
-    <section class="hero">
-      <div class="container">
-        <div class="hero__inner">
-          <span class="section__eyebrow">Auto Broker &amp; Leasing — Los Angeles &amp; Sacramento</span>
-          <h1>Your next car, <em>negotiated for you.</em></h1>
-          <p>
-            Skip the dealership games. AutoLux finds the exact vehicle you want, negotiates
-            the best price, and handles every piece of paperwork — for new cars, used cars,
-            leases, and commercial fleets.
-          </p>
-          <div class="hero__actions">
-            <a class="btn btn--gold" href="lease-specials.html">View Lease Specials</a>
-            <a class="btn btn--ghost" href="contact.html">Talk to a Broker</a>
-          </div>
-          <div class="hero__stats">
-            <div class="hero__stat">
-              <strong>25+</strong>
-              <span>Brands Sourced</span>
-            </div>
-            <div class="hero__stat">
-              <strong>2</strong>
-              <span>California Locations</span>
-            </div>
-            <div class="hero__stat">
-              <strong>5★</strong>
-              <span>Rated on Yelp</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <span class="section__eyebrow">Why AutoLux</span>
-        <h2>A better way to get behind the wheel</h2>
-        <p class="section__lead">
-          Customer satisfaction is our highest priority. Here's what working with a
-          dedicated auto broker gets you.
-        </p>
-        <div class="grid grid--3" style="margin-top: 40px;">
-          <div class="card reveal">
-            <div class="card__icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            </div>
-            <h3>Expertise you can trust</h3>
-            <p>
-              Our brokers negotiate on your behalf every single day. We know the numbers,
-              the incentives, and the tactics — so you never overpay.
-            </p>
-          </div>
-          <div class="card reveal">
-            <div class="card__icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-            </div>
-            <h3>Time saved, stress reduced</h3>
-            <p>
-              No showroom marathons, no back-and-forth. We handle the paperwork, the
-              lease complexities, and the delivery — you just sign and drive.
-            </p>
-          </div>
-          <div class="card reveal">
-            <div class="card__icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-            </div>
-            <h3>Personalized service, exceptional results</h3>
-            <p>
-              We build long-term relationships, not one-time deals. Most of our clients
-              come back — and send their friends and family too.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section--alt">
-      <div class="container">
-        <span class="section__eyebrow">What We Do</span>
-        <h2>Full-service auto brokerage</h2>
-        <div class="grid grid--3" style="margin-top: 40px;">
-          <div class="card reveal">
-            <div class="card__icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17h-2v-6l2-5h9l4 5h4v6h-2"/><circle cx="7.5" cy="17.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/></svg>
-            </div>
-            <h3>New &amp; Used Car Buying</h3>
-            <p>Tell us the make, model, and trim — we locate it, negotiate it, and deliver it at the best possible price.</p>
-          </div>
-          <div class="card reveal">
-            <div class="card__icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><line x1="3" y1="10" x2="21" y2="10"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="16" y1="2" x2="16" y2="6"/></svg>
-            </div>
-            <h3>Leasing</h3>
-            <p>Some of the lowest lease rates in the state, with attractive transfer policies and flexible terms built around you.</p>
-          </div>
-          <div class="card reveal">
-            <div class="card__icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-            </div>
-            <h3>Financing</h3>
-            <p>Bad credit, no credit, or a first-time buyer? We work with a wide network of lenders to get you approved.</p>
-          </div>
-          <div class="card reveal">
-            <div class="card__icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/></svg>
-            </div>
-            <h3>Lease Returns &amp; Early Termination</h3>
-            <p>End your lease on your terms. We manage returns, buyouts, and early exits with favorable policies.</p>
-          </div>
-          <div class="card reveal">
-            <div class="card__icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="7" width="15" height="11" rx="1"/><path d="M16 10h4l3 4v4h-7z"/><circle cx="6" cy="18" r="2"/><circle cx="19" cy="18" r="2"/></svg>
-            </div>
-            <h3>Commercial Vehicles</h3>
-            <p>Vans, trucks, and fleet leasing for businesses of every size — with pricing that keeps your overhead down.</p>
-          </div>
-          <div class="card reveal">
-            <div class="card__icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="15" x2="15" y2="15"/></svg>
-            </div>
-            <h3>Credit Applications</h3>
-            <p>Apply online in minutes — personal or business — and let our finance team shop the best rates for you.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <span class="section__eyebrow">How It Works</span>
-        <h2>Three steps to your new car</h2>
-        <div class="grid grid--3" style="margin-top: 40px;">
-          <div class="step reveal">
-            <div class="step__num">01</div>
-            <h3>Tell us what you want</h3>
-            <p>Call, message, or stop by. Share the vehicle you're after and your budget — or ask us what's hot this month.</p>
-          </div>
-          <div class="step reveal">
-            <div class="step__num">02</div>
-            <h3>We hunt &amp; negotiate</h3>
-            <p>We source the exact car from our dealer network and negotiate pricing, incentives, and terms on your behalf.</p>
-          </div>
-          <div class="step reveal">
-            <div class="step__num">03</div>
-            <h3>Sign &amp; drive</h3>
-            <p>We prepare every document and arrange delivery. Most clients are done in under an hour.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section--alt">
-      <div class="container">
-        <span class="section__eyebrow">Brands We Source</span>
-        <h2 style="margin-bottom: 32px;">Every major make, one broker</h2>
-        <div class="brands reveal">
-          <span>Acura</span><span>Audi</span><span>BMW</span><span>Cadillac</span>
-          <span>Chevrolet</span><span>Dodge</span><span>Ford</span><span>GMC</span>
-          <span>Honda</span><span>Hyundai</span><span>Infiniti</span><span>Jeep</span>
-          <span>Kia</span><span>Land Rover</span><span>Lexus</span><span>Mazda</span>
-          <span>Mercedes-Benz</span><span>Nissan</span><span>Porsche</span><span>Ram</span>
-          <span>Subaru</span><span>Tesla</span><span>Toyota</span><span>Volkswagen</span>
-          <span>Volvo</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <span class="section__eyebrow">Testimonials</span>
-        <h2>What our clients say</h2>
-        <div class="grid grid--3" style="margin-top: 40px;">
-          <div class="card testimonial reveal">
-            <div class="testimonial__stars">★★★★★</div>
-            <p>
-              Amazing pricing and even better service. Tom found me a better deal than
-              three dealerships combined — and I was in and out in under an hour.
-            </p>
-            <div class="testimonial__author">
-              Verified Client
-              <small>Yelp Review — Los Angeles</small>
-            </div>
-          </div>
-          <div class="card testimonial reveal">
-            <div class="testimonial__stars">★★★★★</div>
-            <p>
-              Spartak handled everything — the lease return, the new lease, all the
-              paperwork. Completely stress-free. I'll never walk into a dealership again.
-            </p>
-            <div class="testimonial__author">
-              Verified Client
-              <small>Yelp Review — North Hollywood</small>
-            </div>
-          </div>
-          <div class="card testimonial reveal">
-            <div class="testimonial__stars">★★★★★</div>
-            <p>
-              Zorik was professional, fast, and got me approved when my own bank said no.
-              The whole family gets their cars through AutoLux now.
-            </p>
-            <div class="testimonial__author">
-              Verified Client
-              <small>Yelp Review — Sacramento</small>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" style="padding-top: 0;">
-      <div class="container">
-        <div class="cta-band reveal">
-          <div>
-            <h2>Ready for a better car deal?</h2>
-            <p>Get pre-approved online or call us — it takes five minutes.</p>
-          </div>
-          <div class="hero__actions">
-            <a class="btn btn--gold" href="credit-application.html">Apply Now</a>
-            <a class="btn btn--ghost" href="tel:+18187621100">Call 818.762.1100</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <div class="site-footer__grid">
-        <div>
-          <a class="logo" href="index.html">Auto<span>Lux</span></a>
-          <p>
-            Premier auto broker serving the Greater Los Angeles and Sacramento areas.
-            New &amp; used sales, leasing, financing, lease returns, and commercial fleets.
-          </p>
-          <div class="site-footer__social">
-            <a href="https://www.facebook.com/" aria-label="Facebook" rel="noopener" target="_blank">FB</a>
-            <a href="https://www.instagram.com/" aria-label="Instagram" rel="noopener" target="_blank">IG</a>
-            <a href="https://www.yelp.com/" aria-label="Yelp" rel="noopener" target="_blank">YP</a>
-            <a href="https://www.google.com/maps" aria-label="Google" rel="noopener" target="_blank">G</a>
-          </div>
-        </div>
-        <div>
-          <h4>Explore</h4>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="lease-specials.html">Lease Specials</a></li>
-            <li><a href="commercial.html">Commercial Vehicles</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Services</h4>
-          <ul>
-            <li><a href="credit-application.html">Credit Application</a></li>
-            <li><a href="lease-specials.html">Leasing</a></li>
-            <li><a href="contact.html">Lease Returns</a></li>
-            <li><a href="contact.html">Financing</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Visit Us</h4>
-          <ul>
-            <li>4920 Lankershim Blvd,<br>North Hollywood, CA 91601</li>
-            <li><a href="tel:+18187621100">LA: 818.762.1100</a></li>
-            <li><a href="tel:+12799000101">Sacramento: 279.900.0101</a></li>
-            <li><a href="mailto:sales@myautolux.com">sales@myautolux.com</a></li>
-            <li>Mon–Fri 11AM–7PM<br>Sat 11AM–5PM &middot; Sun Closed</li>
-          </ul>
-        </div>
-      </div>
-      <div class="site-footer__bottom">
-        <span>&copy; <span data-year>2026</span> AutoLux. All rights reserved.</span>
-        <span>Serving Los Angeles &amp; Sacramento, California</span>
-      </div>
-    </div>
-  </footer>
-
-  <script src="js/main.js"></script>
 </body>
 </html>
