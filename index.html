@@ -98,6 +98,47 @@
     td:first-child { font-weight: 600; color: #ffffff; white-space: nowrap; }
     td.price { font-weight: 700; color: #e6c078; white-space: nowrap; font-variant-numeric: tabular-nums; }
 
+    /* Tiers */
+    .tiers { display: grid; gap: 16px; }
+    .tier {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.09);
+      border-radius: 14px;
+      padding: 22px 24px;
+    }
+    .tier header {
+      display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap;
+      margin-bottom: 12px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .tier-num {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.16em;
+      text-transform: uppercase; color: #8f9ab4;
+    }
+    .tier h3 {
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: 1.3rem; color: #ffffff; margin: 0; flex: 1;
+    }
+    .tier-price {
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: 1.3rem; font-weight: 700; color: #e6c078;
+      font-variant-numeric: tabular-nums;
+    }
+    .tier p { margin: 0 0 12px; }
+    .tier p:last-child { margin-bottom: 0; }
+    .tier .data-note {
+      background: rgba(88, 201, 139, 0.07);
+      border-left: 2px solid #58c98b;
+      border-radius: 0 8px 8px 0;
+      padding: 12px 16px;
+      font-size: 0.9rem;
+      color: #aab4cc;
+    }
+    .tier .pro, .tier .con { font-size: 0.9rem; margin-bottom: 6px; }
+    .tier .pro b { color: #58c98b; }
+    .tier .con b { color: #d4a548; }
+
     .callout {
       background: rgba(255, 255, 255, 0.04);
       border-left: 3px solid #d4a548;
@@ -173,6 +214,89 @@
         <li>All applications and statuses visible in your AutoPay dashboard; your website stores no personal customer data — SSNs and credit data are handled only by AutoPay, zero liability on your side.</li>
         <li>A verified pipeline: you'll see a test lead arrive in your dashboard before launch.</li>
       </ul>
+    </section>
+
+    <section>
+      <h2>Three Levels of Integration</h2>
+      <p class="sub">All three send applications to AutoPay under your partner channel — the difference is how deeply the process lives inside your site</p>
+
+      <div class="tiers">
+
+        <article class="tier">
+          <header>
+            <span class="tier-num">Level 1</span>
+            <h3>Button</h3>
+            <span class="tier-price">$350</span>
+          </header>
+          <p>
+            A &ldquo;Get Approved&rdquo; button in your menu and on key pages. The customer
+            clicks and goes to the AutoPay application page, set up under your partner program.
+          </p>
+          <p class="data-note">
+            The application is completed on AutoPay's side. Your website plays no part in
+            handling customer data at all.
+          </p>
+          <p class="pro"><b>Upside:</b> live in a day or two, works immediately.</p>
+          <p class="con"><b>Trade-off:</b> the customer leaves your site — some drop off at that step.</p>
+        </article>
+
+        <article class="tier">
+          <header>
+            <span class="tier-num">Level 2</span>
+            <h3>Embedded form</h3>
+            <span class="tier-price">from $650</span>
+          </header>
+          <p>
+            The form sits directly on your page, inside your design. The customer fills it
+            out without ever leaving myautolux.com.
+          </p>
+          <p class="data-note">
+            Technically it is a secure AutoPay window inside your page: customer data —
+            including the SSN — goes straight to AutoPay, bypassing your website entirely.
+            Your server never sees it and never stores it. Responsibility for personal data
+            stays fully with the financing partner, exactly as it does today.
+          </p>
+          <p class="pro"><b>Upside:</b> the customer stays with you, higher conversion, zero data liability.</p>
+          <p class="con"><b>Trade-off:</b> the form's appearance is set by AutoPay — styling options are limited.</p>
+        </article>
+
+        <article class="tier">
+          <header>
+            <span class="tier-num">Level 3</span>
+            <h3>Live rates</h3>
+            <span class="tier-price">from $3,000</span>
+          </header>
+          <p>
+            Your own quote form on your site. The customer enters their details and within
+            seconds sees real offers: interest rate, term, monthly payment, down payment.
+            They pick one and move on to the application.
+          </p>
+          <p class="data-note">
+            Here the data passes through a secure service module built and maintained
+            specifically for you: it holds the partner access keys and forwards information
+            to AutoPay in transit, storing nothing. Requires separate approval from
+            The Savings Group and partner API keys.
+          </p>
+          <p class="pro"><b>Upside:</b> full control over look and logic — the quote reads as your own service.</p>
+          <p class="con"><b>Trade-off:</b> longest to launch, plus a small monthly cost to run the module (about $0&ndash;20).</p>
+        </article>
+
+      </div>
+
+      <div class="callout">
+        <b>My recommendation:</b> start with Level 1 — the button pays for itself on the
+        first deal and launches right away. Once applications start coming in and you can
+        see the real click-through numbers, move to Level 2: a form on your own site, with
+        the same zero data obligations, gives a noticeable lift in submissions. Level 3
+        makes sense when the flow is steady and you want the financing quote to become part
+        of the AutoLux brand itself.
+      </div>
+
+      <p class="flow-note">
+        In all three scenarios the SSN and credit information are stored only by AutoPay.
+        Your website never stores them under any option — what changes is simply where the
+        customer physically fills out the form.
+      </p>
     </section>
 
     <section>
