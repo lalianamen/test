@@ -139,6 +139,16 @@
     .tier .pro b { color: #58c98b; }
     .tier .con b { color: #d4a548; }
 
+    ul.plain { padding-left: 20px; margin: 0 0 20px; display: grid; gap: 9px; }
+    ul.plain li::marker { color: #d4a548; }
+    .need-sub {
+      font-family: "Inter", sans-serif;
+      font-size: 0.78rem; font-weight: 700; letter-spacing: 0.14em;
+      text-transform: uppercase; color: #d4a548;
+      margin: 22px 0 10px;
+    }
+    .need-sub:first-of-type { margin-top: 0; }
+
     .callout {
       background: rgba(255, 255, 255, 0.04);
       border-left: 3px solid #d4a548;
@@ -338,6 +348,24 @@
         is earned at the final step. Your AutoPay manager confirms the payout schedule
         and your commission rate.
       </div>
+    </section>
+
+    <section>
+      <h2>What I Need From You</h2>
+      <p class="sub">Nothing here costs you anything — it is just access and confirmations</p>
+      <h3 class="need-sub">For the base setup</h3>
+      <ul class="plain">
+        <li>WordPress admin access to myautolux.com (Administrator or Editor level).</li>
+        <li>Your AutoPay manager&rsquo;s contact — to confirm the channel is active and run a test lead.</li>
+        <li>Access to your AutoPay partner dashboard — that is where you will see applications and commissions.</li>
+      </ul>
+      <h3 class="need-sub">For the add-ons</h3>
+      <ul class="plain">
+        <li><strong>Click analytics</strong> — access to your Google Analytics account. If you don&rsquo;t have one yet, a Google account for the business and I&rsquo;ll set it up.</li>
+        <li><strong>Lead tagging</strong> — how you want leads numbered, plus CRM access if the numbers need to match records there.</li>
+        <li><strong>Embedded form</strong> — written confirmation from your AutoPay manager that the embeddable form is available for your partner tier, and the setup details they provide with it.</li>
+        <li><strong>Live rates</strong> — the partner API token and organization code from The Savings Group, and a decision on where the service module is hosted.</li>
+      </ul>
     </section>
 
     <footer>
