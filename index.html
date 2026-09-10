@@ -104,7 +104,9 @@
       display: block; color: #ffffff; font-weight: 600;
       margin: 6px 0 14px; font-size: 1.02rem;
     }
-    .price-box p { margin: 0; color: #aab4cc; font-size: 0.95rem; }
+    .price-box p { margin: 0 0 12px; color: #c3ccdf; font-size: 0.95rem; }
+    .price-box p strong { color: #e6c078; }
+    .price-box .pay-after { margin-bottom: 0; color: #aab4cc; padding-top: 12px; border-top: 1px solid rgba(212, 165, 72, 0.25); }
 
     footer {
       margin-top: 52px;
@@ -115,7 +117,7 @@
       text-align: center;
     }
     @media (max-width: 560px) {
-      .price-box .amount { font-size: 2.3rem; }
+      .price-box .amount { font-size: 2rem; }
     }
   </style>
 </head>
@@ -189,11 +191,17 @@
     <section>
       <h2>Price</h2>
       <div class="price-box">
-        <span class="amount">$950</span>
+        <span class="amount">$950&ndash;1,400</span>
         <span class="all-in">Everything above included. One payment, no monthly fees.</span>
         <p>
-          You pay after you see a test application arrive in your own AutoPay dashboard &mdash;
-          not before. Ready in about a week from the day I get access.
+          <strong>$950</strong> puts the form on one page of your site. Want it on several
+          &mdash; the home page, lease specials, and so on? Up to <strong>$1,400</strong>,
+          depending on how many. We settle the exact number before I start, and it does
+          not change after that.
+        </p>
+        <p class="pay-after">
+          You pay after you see a test application arrive in your own AutoPay dashboard
+          &mdash; not before. Ready in about a week from the day I get access.
         </p>
       </div>
     </section>
