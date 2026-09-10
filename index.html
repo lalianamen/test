@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AutoLux — Get Approved</title>
-  <meta name="description" content="AutoPay online financing for myautolux.com: apply in minutes, soft credit pull, commission on every funded deal. Base setup and optional add-ons.">
+  <title>AutoLux — Financing on Your Site</title>
+  <meta name="description" content="Put the financing application directly on myautolux.com — your customers apply without ever leaving your website.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
@@ -21,153 +21,102 @@
         linear-gradient(160deg, #0b1220 0%, #101a2e 55%, #16233d 100%);
       background-attachment: fixed;
     }
-    .wrap { max-width: 880px; margin: 0 auto; padding: 0 24px; }
+    .wrap { max-width: 780px; margin: 0 auto; padding: 0 24px; }
 
     h1, h2 { font-family: "Playfair Display", Georgia, serif; color: #ffffff; line-height: 1.25; }
-    h2 { font-size: 1.55rem; margin: 0 0 6px; }
-    .sub { color: #8f9ab4; margin: 0 0 22px; font-size: 0.95rem; }
-    section { padding: 40px 0 8px; }
+    h2 { font-size: 1.5rem; margin: 0 0 18px; }
+    section { padding: 44px 0 4px; }
+    p { margin: 0 0 16px; }
+    strong { color: #ffffff; font-weight: 600; }
 
     /* Hero */
-    .hero { text-align: center; padding: 72px 0 48px; }
+    .hero { text-align: center; padding: 68px 0 40px; }
     .logo {
       font-family: "Playfair Display", Georgia, serif;
-      font-size: 2.7rem; font-weight: 700; color: #ffffff; margin: 0 0 10px;
+      font-size: 2.6rem; font-weight: 700; color: #ffffff; margin: 0 0 8px;
     }
     .logo span { color: #d4a548; }
-    .hero p.tag { margin: 0 0 30px; font-size: 1.12rem; }
+    .hero .tag { font-size: 1.18rem; color: #e6e9f2; margin: 0 auto 30px; max-width: 520px; }
     .btn {
       display: inline-block;
-      padding: 18px 44px;
+      padding: 17px 42px;
       border-radius: 999px;
       background: linear-gradient(135deg, #d4a548, #c08f2f);
       color: #0b1220;
-      font-size: 1.15rem;
+      font-size: 1.1rem;
       font-weight: 700;
       text-decoration: none;
       box-shadow: 0 10px 26px rgba(212, 165, 72, 0.4);
       transition: transform 0.15s ease, box-shadow 0.15s ease;
     }
     .btn:hover { transform: translateY(-2px); box-shadow: 0 14px 32px rgba(212, 165, 72, 0.5); }
-    .note { margin-top: 16px; font-size: 0.85rem; color: #8f9ab4; }
+    .note { margin-top: 14px; font-size: 0.85rem; color: #8f9ab4; }
 
-    /* Steps */
-    .flow { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
-    .flow div {
-      background: rgba(255, 255, 255, 0.04);
-      border: 1px solid rgba(255, 255, 255, 0.09);
-      border-radius: 12px;
-      padding: 16px 14px;
-      font-size: 0.88rem;
-      text-align: center;
-    }
-    .flow div b { display: block; color: #ffffff; margin-bottom: 4px; }
-    .flow-note { font-size: 0.82rem; color: #8f9ab4; margin: 14px 0 0; }
-    code { color: #e6c078; font-size: 0.85em; word-break: break-all; }
-
-    /* Checklists */
-    ul.check { list-style: none; padding: 0; margin: 0; display: grid; gap: 11px; }
-    ul.check li { padding-left: 28px; position: relative; }
-    ul.check li::before { content: "✓"; position: absolute; left: 0; top: 0; color: #58c98b; font-weight: 700; }
-    strong { color: #ffffff; font-weight: 600; }
-
-    /* Price */
-    .price-line {
-      display: flex; align-items: baseline; gap: 16px; flex-wrap: wrap;
-      background: rgba(212, 165, 72, 0.08);
-      border: 1px solid rgba(212, 165, 72, 0.35);
-      border-radius: 12px;
-      padding: 16px 20px;
-      margin-top: 20px;
-    }
-    .price-line .amount {
-      font-family: "Playfair Display", Georgia, serif;
-      font-size: 1.8rem; font-weight: 700; color: #e6c078;
-      font-variant-numeric: tabular-nums;
-    }
-    .price-line .terms { color: #aab4cc; font-size: 0.92rem; }
-
-    /* Table */
-    .table-scroll { overflow-x: auto; border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.09); }
-    table { width: 100%; border-collapse: collapse; font-size: 0.93rem; background: rgba(255, 255, 255, 0.03); }
-    th {
-      text-align: left; background: rgba(255, 255, 255, 0.06); color: #ffffff;
-      font-weight: 600; padding: 12px 16px; font-size: 0.85rem; letter-spacing: 0.04em;
-    }
-    td { padding: 12px 16px; border-top: 1px solid rgba(255, 255, 255, 0.08); vertical-align: top; }
-    td:first-child { font-weight: 600; color: #ffffff; white-space: nowrap; }
-    td.price { font-weight: 700; color: #e6c078; white-space: nowrap; font-variant-numeric: tabular-nums; }
-
-    /* Tiers */
-    .tiers { display: grid; gap: 16px; }
-    .tier {
+    /* Intro */
+    .intro {
       background: rgba(255, 255, 255, 0.04);
       border: 1px solid rgba(255, 255, 255, 0.09);
       border-radius: 14px;
-      padding: 22px 24px;
+      padding: 26px 28px;
+      font-size: 1.03rem;
     }
-    .tier header {
-      display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap;
-      margin-bottom: 12px;
-      padding-bottom: 12px;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    .intro p:last-child { margin-bottom: 0; }
+
+    /* Steps */
+    .steps { display: grid; gap: 12px; counter-reset: step; }
+    .step {
+      display: flex; gap: 16px; align-items: flex-start;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.09);
+      border-radius: 12px;
+      padding: 18px 22px;
     }
-    .tier-num {
-      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.16em;
-      text-transform: uppercase; color: #8f9ab4;
-    }
-    .tier h3 {
+    .step-num {
       font-family: "Playfair Display", Georgia, serif;
-      font-size: 1.3rem; color: #ffffff; margin: 0; flex: 1;
+      font-size: 1.4rem; font-weight: 700; color: #d4a548;
+      line-height: 1.2; flex-shrink: 0;
     }
-    .tier-price {
+    .step p { margin: 0; }
+
+    /* Lists */
+    ul.check { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+    ul.check li { padding-left: 28px; position: relative; }
+    ul.check li::before { content: "✓"; position: absolute; left: 0; top: 0; color: #58c98b; font-weight: 700; }
+    ul.plain { padding-left: 20px; margin: 0; display: grid; gap: 10px; }
+    ul.plain li::marker { color: #d4a548; }
+    .lead-in { color: #8f9ab4; font-size: 0.95rem; margin: -6px 0 18px; }
+
+    /* Price */
+    .price-box {
+      background: rgba(212, 165, 72, 0.09);
+      border: 1px solid rgba(212, 165, 72, 0.38);
+      border-radius: 14px;
+      padding: 28px 30px;
+      text-align: center;
+    }
+    .price-box .amount {
       font-family: "Playfair Display", Georgia, serif;
-      font-size: 1.3rem; font-weight: 700; color: #e6c078;
+      font-size: 2.8rem; font-weight: 700; color: #e6c078;
+      display: block; line-height: 1.1;
       font-variant-numeric: tabular-nums;
     }
-    .tier p { margin: 0 0 12px; }
-    .tier p:last-child { margin-bottom: 0; }
-    .tier .data-note {
-      background: rgba(88, 201, 139, 0.07);
-      border-left: 2px solid #58c98b;
-      border-radius: 0 8px 8px 0;
-      padding: 12px 16px;
-      font-size: 0.9rem;
-      color: #aab4cc;
+    .price-box .all-in {
+      display: block; color: #ffffff; font-weight: 600;
+      margin: 6px 0 14px; font-size: 1.02rem;
     }
-    .tier .pro, .tier .con { font-size: 0.9rem; margin-bottom: 6px; }
-    .tier .pro b { color: #58c98b; }
-    .tier .con b { color: #d4a548; }
-
-    ul.plain { padding-left: 20px; margin: 0 0 20px; display: grid; gap: 9px; }
-    ul.plain li::marker { color: #d4a548; }
-    .need-sub {
-      font-family: "Inter", sans-serif;
-      font-size: 0.78rem; font-weight: 700; letter-spacing: 0.14em;
-      text-transform: uppercase; color: #d4a548;
-      margin: 22px 0 10px;
-    }
-    .need-sub:first-of-type { margin-top: 0; }
-
-    .callout {
-      background: rgba(255, 255, 255, 0.04);
-      border-left: 3px solid #d4a548;
-      border-radius: 0 10px 10px 0;
-      padding: 16px 20px;
-      margin: 26px 0 0;
-      font-size: 0.94rem;
-    }
-    .callout b { color: #ffffff; }
+    .price-box p { margin: 0; color: #aab4cc; font-size: 0.95rem; }
 
     footer {
-      margin-top: 40px;
+      margin-top: 52px;
       border-top: 1px solid rgba(255, 255, 255, 0.08);
-      padding: 22px 0 40px;
+      padding: 22px 0 44px;
       font-size: 0.84rem;
       color: #8f9ab4;
       text-align: center;
     }
-    @media (max-width: 640px) { .flow { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 560px) {
+      .price-box .amount { font-size: 2.3rem; }
+    }
   </style>
 </head>
 <body>
@@ -176,201 +125,81 @@
 
     <div class="hero">
       <h1 class="logo">Auto<span>Lux</span></h1>
-      <p class="tag">Get approved for your next car in minutes.</p>
+      <p class="tag">Financing your customers can apply for without ever leaving your website.</p>
       <a class="btn"
          href="https://apply.autopay.com/unified?partnerUniqueId=&amp;ap%5Ba%5D%5BpartnerRecordUniqueIdentifier%5D=&amp;leadChannel=AUTOPAY_AUTO_LUX_FAST_TRACK_API"
          target="_blank" rel="noopener">
-        Get Approved
+        See the Application
       </a>
-      <p class="note">Secure application &middot; Soft credit pull — checking your rate won't affect your credit score</p>
+      <p class="note">This is the real application your customers will complete &middot; Checking a rate does not affect their credit score</p>
     </div>
 
     <section>
-      <h2>How It Works</h2>
-      <p class="sub">The full chain — from the button to your commission</p>
-      <div class="flow">
-        <div><b>1. Button on your site</b>A visitor clicks &ldquo;Get Approved&rdquo;</div>
-        <div><b>2. AutoPay application</b>They complete the form — soft credit pull only</div>
-        <div><b>3. Lead attributed</b>Tagged with AutoLux&rsquo;s personal channel</div>
-        <div><b>4. Commission</b>Paid for every funded loan</div>
+      <div class="intro">
+        <p>
+          Right now a customer who wants financing has to leave myautolux.com and apply
+          somewhere else. A good number of them never come back.
+        </p>
+        <p>
+          This puts the application form <strong>directly on your website</strong> &mdash;
+          same lender, same approvals, but your customer stays on your page the whole time.
+        </p>
       </div>
-      <p class="flow-note">
-        Personal channel: <code>AUTOPAY_AUTO_LUX_FAST_TRACK_API</code> — embedded in the
-        link itself, so lead attribution can never be lost.
-      </p>
     </section>
 
     <section>
-      <h2>Base Setup &amp; Connection</h2>
-      <p class="sub">What's included in the base setup</p>
+      <h2>How it works</h2>
+      <div class="steps">
+        <div class="step">
+          <span class="step-num">1</span>
+          <p>Your customer clicks <strong>&ldquo;Apply for Financing&rdquo;</strong> on myautolux.com.</p>
+        </div>
+        <div class="step">
+          <span class="step-num">2</span>
+          <p>They fill out the application right there, on your page, in your site&rsquo;s design.</p>
+        </div>
+        <div class="step">
+          <span class="step-num">3</span>
+          <p>The application goes to AutoPay under your account &mdash; and you earn your commission on every funded deal.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>What you get</h2>
       <ul class="check">
-        <li><strong>Partner link configured</strong> with your personal channel — this is what guarantees every application is credited to AutoLux.</li>
-        <li><strong>&ldquo;Get Approved&rdquo; button installed</strong> on myautolux.com: in the main menu and on key pages (home, Credit Applications, Lease Specials).</li>
-        <li><strong>Full chain verified end to end:</strong> a test lead plus confirmation from your AutoPay manager that the channel is active and the application shows up in your dashboard.</li>
-        <li><strong>Outdated forms replaced:</strong> the AutoPay application covers both personal and business financing.</li>
-        <li><strong>Quick reference guide:</strong> where to see applications, how to read statuses (submitted → approved → funded), and when commission is paid.</li>
-      </ul>
-      <div class="price-line">
-        <span class="amount">$350</span>
-        <span class="terms">flat turnkey price — payment is due only after you see the test application in your own AutoPay dashboard</span>
-      </div>
-    </section>
-
-    <section>
-      <h2>What You Get</h2>
-      <ul class="check">
-        <li>A working financing button — customers submit applications themselves, 24/7.</li>
-        <li>Every application automatically attributed to AutoLux — commission on every funded deal goes to you.</li>
-        <li>All applications and statuses visible in your AutoPay dashboard; your website stores no personal customer data — SSNs and credit data are handled only by AutoPay, zero liability on your side.</li>
-        <li>A verified pipeline: you'll see a test lead arrive in your dashboard before launch.</li>
+        <li>A financing application built into your website, matching your design.</li>
+        <li>Every application credited to AutoLux automatically &mdash; your commission can never be lost or go to someone else.</li>
+        <li>Customer information goes straight to AutoPay. Your website never stores Social Security numbers or credit data, so that responsibility stays with the lender, exactly as it is today.</li>
+        <li>Tested with a real application before launch &mdash; you will watch it appear in your own AutoPay dashboard.</li>
+        <li>A one-page guide: where to find your applications, and when commission is paid.</li>
       </ul>
     </section>
 
     <section>
-      <h2>Three Levels of Integration</h2>
-      <p class="sub">All three send applications to AutoPay under your partner channel — the difference is how deeply the process lives inside your site</p>
-
-      <div class="tiers">
-
-        <article class="tier">
-          <header>
-            <span class="tier-num">Level 1</span>
-            <h3>Button</h3>
-            <span class="tier-price">$350</span>
-          </header>
-          <p>
-            A &ldquo;Get Approved&rdquo; button in your menu and on key pages. The customer
-            clicks and goes to the AutoPay application page, set up under your partner program.
-          </p>
-          <p class="data-note">
-            The application is completed on AutoPay's side. Your website plays no part in
-            handling customer data at all.
-          </p>
-          <p class="pro"><b>Upside:</b> live in a day or two, works immediately.</p>
-          <p class="con"><b>Trade-off:</b> the customer leaves your site — some drop off at that step.</p>
-        </article>
-
-        <article class="tier">
-          <header>
-            <span class="tier-num">Level 2</span>
-            <h3>Embedded form</h3>
-            <span class="tier-price">$650&ndash;1,200</span>
-          </header>
-          <p>
-            The form sits directly on your page, inside your design. The customer fills it
-            out without ever leaving myautolux.com.
-          </p>
-          <p class="data-note">
-            Technically it is a secure AutoPay window inside your page: customer data —
-            including the SSN — goes straight to AutoPay, bypassing your website entirely.
-            Your server never sees it and never stores it. Responsibility for personal data
-            stays fully with the financing partner, exactly as it does today.
-          </p>
-          <p class="pro"><b>Upside:</b> the customer stays with you, higher conversion, zero data liability.</p>
-          <p class="con"><b>Trade-off:</b> the form's appearance is set by AutoPay — styling options are limited.</p>
-        </article>
-
-        <article class="tier">
-          <header>
-            <span class="tier-num">Level 3</span>
-            <h3>Live rates</h3>
-            <span class="tier-price">$3,000&ndash;6,000</span>
-          </header>
-          <p>
-            Your own quote form on your site. The customer enters their details and within
-            seconds sees real offers: interest rate, term, monthly payment, down payment.
-            They pick one and move on to the application.
-          </p>
-          <p class="data-note">
-            Here the data passes through a secure service module built and maintained
-            specifically for you: it holds the partner access keys and forwards information
-            to AutoPay in transit, storing nothing. Requires separate approval from
-            The Savings Group and partner API keys.
-          </p>
-          <p class="pro"><b>Upside:</b> full control over look and logic — the quote reads as your own service.</p>
-          <p class="con"><b>Trade-off:</b> longest to launch, plus a small monthly cost to run the module (about $0&ndash;20).</p>
-        </article>
-
-      </div>
-
-      <div class="callout">
-        <b>My recommendation:</b> start with Level 1 — the button pays for itself on the
-        first deal and launches right away. Once applications start coming in and you can
-        see the real click-through numbers, move to Level 2: a form on your own site, with
-        the same zero data obligations, gives a noticeable lift in submissions. Level 3
-        makes sense when the flow is steady and you want the financing quote to become part
-        of the AutoLux brand itself.
-      </div>
-
-      <p class="flow-note">
-        In all three scenarios the SSN and credit information are stored only by AutoPay.
-        Your website never stores them under any option — what changes is simply where the
-        customer physically fills out the form.
-      </p>
-    </section>
-
-    <section>
-      <h2>Optional Add-Ons</h2>
-      <p class="sub">Not included in the base setup — each can be added separately whenever you need it</p>
-      <div class="table-scroll">
-        <table>
-          <tr><th>Option</th><th>What it does</th><th>Price</th></tr>
-          <tr>
-            <td>Click analytics</td>
-            <td>Google Analytics tracking on the button: how many visitors go to the application, and from which pages.</td>
-            <td class="price">$200</td>
-          </tr>
-          <tr>
-            <td>Lead tagging</td>
-            <td>Each application carries your own reference number — for reconciliation with your CRM or tracking sources.</td>
-            <td class="price">$200</td>
-          </tr>
-          <tr>
-            <td>Embedded application form</td>
-            <td>AutoPay's &ldquo;Embeddable Shopping Experience&rdquo; — the form opens inside your website instead of an external link.</td>
-            <td class="price">$650&ndash;1,200</td>
-          </tr>
-          <tr>
-            <td>Live rates on your site</td>
-            <td>Rates API integration: customers see real offers (rate, term, monthly payment) right on your website.</td>
-            <td class="price">$3,000&ndash;6,000</td>
-          </tr>
-        </table>
-      </div>
-      <p class="flow-note">
-        Ranged prices depend on scope. Once the partner keys are in place and we have had a
-        short call about exactly what you need, I fix the final figure &mdash; it does not
-        change after that.
-      </p>
-      <div class="callout">
-        <b>About commission:</b> AutoPay pays for funded deals, not for submitted forms.
-        An application moves through &ldquo;submitted → approved → funded,&rdquo; and commission
-        is earned at the final step. Your AutoPay manager confirms the payout schedule
-        and your commission rate.
-      </div>
-    </section>
-
-    <section>
-      <h2>What I Need From You</h2>
-      <p class="sub">Nothing here costs you anything — it is just access and confirmations</p>
-      <h3 class="need-sub">For the base setup</h3>
+      <h2>What I need from you</h2>
+      <p class="lead-in">None of this costs you anything &mdash; it is just access.</p>
       <ul class="plain">
-        <li>WordPress admin access to myautolux.com (Administrator or Editor level).</li>
-        <li>Your AutoPay manager&rsquo;s contact — to confirm the channel is active and run a test lead.</li>
-        <li>Access to your AutoPay partner dashboard — that is where you will see applications and commissions.</li>
+        <li>Login access to your website&rsquo;s admin area.</li>
+        <li>Your AutoPay manager&rsquo;s name and phone number.</li>
+        <li>Confirmation that you can sign in to your AutoPay partner dashboard.</li>
       </ul>
-      <h3 class="need-sub">For the add-ons</h3>
-      <ul class="plain">
-        <li><strong>Click analytics</strong> — access to your Google Analytics account. If you don&rsquo;t have one yet, a Google account for the business and I&rsquo;ll set it up.</li>
-        <li><strong>Lead tagging</strong> — how you want leads numbered, plus CRM access if the numbers need to match records there.</li>
-        <li><strong>Embedded form</strong> — written confirmation from your AutoPay manager that the embeddable form is available for your partner tier, and the setup details they provide with it.</li>
-        <li><strong>Live rates</strong> — the partner API token and organization code from The Savings Group, and a decision on where the service module is hosted.</li>
-      </ul>
+    </section>
+
+    <section>
+      <h2>Price</h2>
+      <div class="price-box">
+        <span class="amount">$950</span>
+        <span class="all-in">Everything above included. One payment, no monthly fees.</span>
+        <p>
+          You pay after you see a test application arrive in your own AutoPay dashboard &mdash;
+          not before. Ready in about a week from the day I get access.
+        </p>
+      </div>
     </section>
 
     <footer>
-      Prepared for AutoLux &middot; Partner program questions: your AutoPay manager
-      or affiliates@thesavingsgroup.com
+      Prepared for AutoLux &middot; myautolux.com
     </footer>
 
   </div>
